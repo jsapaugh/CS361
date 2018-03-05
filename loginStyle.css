@@ -1,0 +1,61 @@
+table, th, td {
+    border: 1px solid black;
+    position: static;
+}
+
+#mainHeader{
+	background-color: lightblue;
+	margin: auto;
+	text-align: center;
+}
+
+#header2{
+	text-align: center;
+	
+}
+
+#mainDiv{
+	margin-top: 20px;
+	float:left;
+	width:75%;
+	padding:20px;
+	background-color: pink;
+	position: static;
+}
+#tfoot1{
+	position: static;
+
+}
+#tfoot2{
+	position: static;
+}
+
+#centerDiv{
+
+}
+
+#div1{
+	position:static;
+	width:50%;
+	background-color: lightblue;
+	margin: auto;
+	text-align: center;
+	
+	
+}
+#div2{
+	position:static;
+	width:50%;
+	background-color: lightblue;
+	margin: auto;
+	text-align: center;
+	
+	
+}
+#form1 {
+
+	position: static;
+	margin-top: 100px;
+
+	
+}
