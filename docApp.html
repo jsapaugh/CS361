@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Digital Doctor</title>
+    <link rel="stylesheet" href="loginStyle.css">
+  </head>
+  <body>
+    <h1 id="mainHeader">DIGITAL DOCTOR</h1>
+   <div id="centerDiv">
+        <h2 id="header2">Apply Here</h2>
+        <div id="docAppDiv">
+            <form id="form1">
+            	<fieldset id="docAppForm">
+                    <legend>Patient Login</legend>
+                      Digital Doctor username: <input id="userName" type="text" name="text_input"> </br>
+                      First name: <input id="firstName" type="text" name="text_input"> </br>
+                      Last name: <input id="lastName" type="text" name="text_input"> </br>
+                      City: <input id="city" type="text" name="text_input"> </br>
+                      State: <input id="state" type="text" name="text_input"> </br>
+                      License number: <input id="license" type="text" name="numerical_input"> </br>
+                      <fieldset id="docAppRefs">
+                        <legend>References (email addresses)</legend>
+                          Reference 1: <input id="ref1" type="email" name="text_input"> </br>
+                          Reference 2: <input id="ref2" type="email" name="text_input"> </br>
+                          Reference 3: <input id="ref3" type="email" name="text_input"> </br>
+                      </fieldset>
+                    <button type="button" id="submit" onclick="getFields()">Submit application</button>
+            	</fieldset>
+            </form>
+        </div>
+    </div>
+     <script src="applicationScript.js"></script>
+  </body>
+
+</html>
