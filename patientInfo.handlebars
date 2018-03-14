@@ -1,0 +1,50 @@
+<head>
+  <meta charset="utf-8">
+  <title>Digital Doctor</title>
+</head>
+<body>
+  <h1 id="mainHeader">DIGITAL DOCTOR</h1>
+ <div id="centerDiv">
+      <h2 id="header1">Personal Information</h2>
+      <div id="showInfoDiv">
+        <div id="showMedHx">Medical history: {{{medHx}}}</div>
+        <div id="showInsId">Insurance ID: {{{insID}}}</div>
+        <div id="showInsCo">Insurance Compnay: {{{insCo}}}</div>
+        <div id="showCard">Credit Card: {{{card}}}</div>
+        <div id="showAddr">Street address: {{{addr}}}</div>
+        <div id="showCity">City: {{{city}}}</div>
+        <div id="showState">State: {{{state}}}</div>
+        <div id="showZip">Zip: {{{zip}}}</div>
+        <div id="showPharm">Preferred Pharmacy: {{{pharm}}}</div>
+        <div id="showPharmZip">Pharmacy Zip: {{{pharmZip}}}</div>
+        {{ if consent }}
+        <div id="showPharmZip">Privacy info has been read</div>
+        {{ else }}
+        <div id="showPharmZip">Privacy info has not been read</div>
+      </div>
+      <h2 id="header2">Update Information</h2>
+      <div id="updateInfoDiv">
+          <form id="form1">
+          	<fieldset id="patientInfoForm">
+                  <legend>Patient Information</legend>
+                    Medical History: <textarea id="medHx"> </br>
+                    Insurance ID: <input id="insID" type="text" name="text_input"> </br>
+                    Insurance Company: <input id="insCo" type="text" name="text_input"> </br>
+                    Credit card: <input id="creditCard" type="text" name="text_input"> </br>
+                    <fieldset>
+                      <Legend>Billing Address</legend>
+                        Address: <input id="address" type="text" name="text_input"> </br>
+                        City: <input id="city" type="text" name="text_input"> </br>
+                        State: <input id="state" type="text" name="text_input"> </br>
+                        Zip: <input id="zip" type="text" name="text_input"> </br>
+                    </fieldset>
+                    Preferred Pharmacy: <input id="pharm" type="text" name="text_input"> </br>
+                    Pharmacy Zip: <input id="pharmZip" type="Zip" name="text_input"> </br>
+                    I have received and read my privacy notice: <input id="hipaa" type="checkbox" value="consent"> </br>
+                  <button type="button" id="submit" onclick="submitPatientInfo()">Save information</button>
+          	</fieldset>
+          </form>
+      </div>
+  </div>
+  <div id="response"></div>
+</body>
